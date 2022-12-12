@@ -1,0 +1,27 @@
+.container {
+	min-height: 250px;
+	width: 250px;
+	border-radius: 25px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+#error {
+	color: red;
+}
+
+input:invalid {
+	outline: 1px solid red;
+}
+
+.height {
+	display: flex;
+	justify-content: space-between;
+}
+
+#updateHeight {
+	width: auto;
+	height: auto;
+}

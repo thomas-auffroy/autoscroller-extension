@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="panel.css">
+	</head>
+	<body>
+		
+		<div class="container">
+			<a href="https://cubic-bezier.com" target="_blank">Paramètres de bézier</a>
+			<div class="height">
+				<p id="height">Click to update height</p>
+				<button id="heightButton">Update height</button>
+			</div>
+			<div>
+				<label for="duration">Duration of the scrolling effect (ms)</label>
+				<input type="number" name="duration" id="duration" min="100" placeholder="500"required>
+			</div>
+
+			<div>
+				<label for="delay">Delay before the scrolling starts (ms)</label>
+				<input type="number" name="delay" id="delay" min="0" placeholder="500" step="100" required>
+			</div>
+
+			<div>
+				<label for="cubic-bezier">Cubic-bezier numbers</label>
+				<input type="text" name="cubic-bezier" id="cubic-bezier" minlength="7" maxLength="19" placeholder="0.17,0.67,0.83,0.67" required>
+			</div>
+	
+	
+			
+			<button type="button" id="run">Run !</button>
+
+			<div id="error"></div>
+		</div>
+
+		<script src="panel.js"></script>
+	</body>
+</html>

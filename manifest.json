@@ -1,0 +1,34 @@
+{
+
+  "manifest_version": 2,
+  "name": "Auto-Scroller",
+  "version": "1.0",
+
+  "description": "Auto scroll the page",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+    "notifications", "tabs", "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["background/autoscroller.js"]
+  },
+  
+  
+  
+  "browser_action": {
+    "default_icon": "icons/border-48.png",
+    "default_title": "AutoScroller",
+    "default_popup": "sidebar/panel.html"
+  }
+}
